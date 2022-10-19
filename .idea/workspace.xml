@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f99e1b6-982a-488f-9c37-a2a296515eee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="2f99e1b6-982a-488f-9c37-a2a296515eee" name="Changes" comment="DB연결 및 yml 추가 설정">
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/initData/DevInitData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/initData/InitDataBefore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/initData/TestInitData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/member/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/main/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1Week_Mission/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/EbookApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/EbookApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/resources/application-test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/application-test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1Week_Mission/src/test/java/com/ll/exam/ebook/EbookApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/test/java/com/ll/exam/ebook/EbookApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -62,8 +67,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666139355859</updated>
-      <workItem from="1666139359141" duration="4501000" />
+      <workItem from="1666139359141" duration="6596000" />
     </task>
+    <task id="LOCAL-00001" summary="DB연결 및 yml 추가 설정">
+      <created>1666164328416</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666164328416</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DB연결 및 yml 추가 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="DB연결 및 yml 추가 설정" />
   </component>
 </project>
