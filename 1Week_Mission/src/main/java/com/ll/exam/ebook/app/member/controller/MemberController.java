@@ -35,6 +35,11 @@ public class MemberController {
         return "member/login";
     }
 
+    @GetMapping("/list")
+    public String showList() {
+        return "member/list";
+    }
+
     @PreAuthorize("isAnonymous()")
     @GetMapping("/join")
     public String showJoin() {
