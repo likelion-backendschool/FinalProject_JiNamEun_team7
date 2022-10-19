@@ -5,6 +5,7 @@ import com.example.eBook.domain.member.validator.SignFormValidator;
 import com.ll.exam.ebook.app.member.form.JoinForm;
 import com.ll.exam.ebook.app.member.service.MemberService;
 import com.ll.exam.ebook.app.util.Ut;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -17,26 +18,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-
+import java.util.List;
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/member")
 public class MemberController {
     private final MemberService memberService;
 
-    @PreAuthorize("isAnonymous()")
+
     @GetMapping("/login")
     public String showLogin(HttpServletRequest request) {
         String uri = request.getHeader("Referer");
         if (uri != null && !uri.contains("/member/login")) {
             request.getSession().setAttribute("prevPage", uri);
         }
-
         return "member/login";
     }
 
     @GetMapping("/list")
-    public String showList() {
+    public String showList(Model model) {
+        List<Article> articles = articleService.getList();
+        model.addAttribute("articles", articles);
         return "member/list";
     }
 
