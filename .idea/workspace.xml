@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f99e1b6-982a-488f-9c37-a2a296515eee" name="Changes" comment="Controllor 및 Service 구현, 회원가입 기능">
+    <list default="true" id="2f99e1b6-982a-488f-9c37-a2a296515eee" name="Changes" comment="pr">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +64,8 @@
       <option name="presentableId" value="Default" />
       <updated>1666139355859</updated>
       <workItem from="1666139359141" duration="8141000" />
-      <workItem from="1666168263420" duration="2078000" />
+      <workItem from="1666168263420" duration="3272000" />
+      <workItem from="1666243920205" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="DB연결 및 yml 추가 설정">
       <created>1666164328416</created>
@@ -94,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666169492807</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="pr">
+      <created>1666243615748</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666243615748</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +124,7 @@
     <MESSAGE value="initData 도입" />
     <MESSAGE value="Entity 구현," />
     <MESSAGE value="Controllor 및 Service 구현, 회원가입 기능" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controllor 및 Service 구현, 회원가입 기능" />
+    <MESSAGE value="pr" />
+    <option name="LAST_COMMIT_MESSAGE" value="pr" />
   </component>
 </project>
