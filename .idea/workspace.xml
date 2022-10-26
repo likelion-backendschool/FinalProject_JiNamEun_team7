@@ -4,78 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f99e1b6-982a-488f-9c37-a2a296515eee" name="Changes" comment="2week setting">
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/app.cash.entity/CashLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/cart/controller/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/cart/entity/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/cart/entity/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/cart/repository/CartItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/cart/service/CartService.java" afterDir="false" />
+    <list default="true" id="2f99e1b6-982a-488f-9c37-a2a296515eee" name="Changes" comment="주문 기능 도입">
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/cash/entity/CashLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/cash/repository/CashLogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/cash/service/CashService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/order/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/order/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/order/entity/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/order/exception/ActorCanNotPayOrderException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/order/exception/ActorCanNotSeeOrderException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/order/exception/OrderIdNotMatchedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/order/exception/OrderNotEnoughRestCashException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/order/repository/OrderItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/order/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/order/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/product/controller/entity/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/Final20221008Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/Final20221008Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/attr/entity/Attr.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/attr/entity/Attr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/attr/repository/AttrRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/attr/repository/AttrRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/attr/service/AttrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/attr/service/AttrService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/base/dto/RsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/dto/RsData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/base/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/base/exception/ActorCanNotModifyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/exception/ActorCanNotModifyException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/base/exception/ActorCanNotRemoveException.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/exception/ActorCanNotRemoveException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/base/exception/ActorCanNotSeeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/exception/ActorCanNotSeeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/base/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/exception/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/base/initData/NotProdInitData.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/initData/NotProdInitData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/base/rq/Rq.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/rq/Rq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/email/entity/SendEmailLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/email/entity/SendEmailLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/email/repository/SendEmailLogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/email/repository/SendEmailLogRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/email/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/email/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/emailSender/service/EmailSenderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/emailSender/service/EmailSenderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/emailVerification/controller/EmailVerificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/emailVerification/controller/EmailVerificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/emailVerification/service/EmailVerificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/emailVerification/service/EmailVerificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/home/controller/AdmHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/home/controller/AdmHomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/home/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/home/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/member/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/member/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/member/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/member/exception/AlreadyJoinException.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/member/exception/AlreadyJoinException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/member/form/JoinForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/member/form/JoinForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/member/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/member/repository/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/member/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/post/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/post/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/post/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/post/entity/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/post/form/PostForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/post/form/PostForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/post/repository/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/post/repository/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/post/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/post/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/postTag/entity/PostTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/postTag/entity/PostTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/postTag/repository/PostTagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/postTag/repository/PostTagRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/postTag/service/PostTagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/postTag/service/PostTagService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/postkeyword/entity/PostKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/postkeyword/entity/PostKeyword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/postkeyword/repository/PostKeywordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/postkeyword/repository/PostKeywordRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/postkeyword/repository/PostKeywordRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/postkeyword/repository/PostKeywordRepositoryCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/postkeyword/repository/PostKeywordRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/postkeyword/repository/PostKeywordRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/postkeyword/service/PostKeywordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/postkeyword/service/PostKeywordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/product/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/product/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/product/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/product/form/ProductForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/product/form/ProductForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/product/form/ProductModifyForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/product/form/ProductModifyForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/product/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/product/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/product/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/productKeyword/entity/ProductKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/productKeyword/entity/ProductKeyword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/productKeyword/repository/ProductKeywordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/productKeyword/repository/ProductKeywordRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/productKeyword/service/ProductKeywordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/productKeyword/service/ProductKeywordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/productTag/entity/ProductTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/productTag/entity/ProductTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/productTag/repository/ProductTagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/productTag/repository/ProductTagRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/productTag/service/ProductTagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/productTag/service/ProductTagService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/security/dto/MemberContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/security/dto/MemberContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/security/handler/CustomAuthSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/security/handler/CustomAuthSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/security/handler/CustomAuthenticationFailureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/security/handler/CustomAuthenticationFailureHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/app/security/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/security/service/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/final__2022_10_08/util/Ut.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/util/Ut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/base/initData/NotProdInitData.java" beforeDir="false" afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/base/initData/NotProdInitData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/base/rq/Rq.java" beforeDir="false" afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/base/rq/Rq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/app/member/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/util/Ut.java" beforeDir="false" afterPath="$PROJECT_DIR$/2Week_Mission/src/main/java/com/ll/exam/ebook/util/Util.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +83,7 @@
       <recent name="C:\Users\skadm\IdeaProjects\FinalProject_JiNamEun_team7\1Week_Mission\gradle\wrapper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\skadm\IdeaProjects\FinalProject_JiNamEun_team7\2Week_Mission\src\main\java\com\ll\exam\ebook\app\cash\entity" />
       <recent name="C:\Users\skadm\IdeaProjects\FinalProject_JiNamEun_team7\2Week_Mission" />
       <recent name="C:\Users\skadm\IdeaProjects\FinalProject_JiNamEun_team7\1Week_Mission" />
     </key>
@@ -153,7 +100,7 @@
       <workItem from="1666168263420" duration="3272000" />
       <workItem from="1666243920205" duration="1000" />
       <workItem from="1666687548031" duration="3048000" />
-      <workItem from="1666770347914" duration="3093000" />
+      <workItem from="1666770347914" duration="4488000" />
     </task>
     <task id="LOCAL-00001" summary="DB연결 및 yml 추가 설정">
       <created>1666164328416</created>
@@ -204,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666690618476</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="주문 기능 도입">
+      <created>1666773795751</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666773795751</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +184,7 @@
     <MESSAGE value="pr" />
     <MESSAGE value="2week init" />
     <MESSAGE value="2week setting" />
-    <option name="LAST_COMMIT_MESSAGE" value="2week setting" />
+    <MESSAGE value="주문 기능 도입" />
+    <option name="LAST_COMMIT_MESSAGE" value="주문 기능 도입" />
   </component>
 </project>
