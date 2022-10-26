@@ -1,5 +1,6 @@
 package main.java.com.ll.exam.ebook.app.base.initData;
 
+import com.ll.exam.ebook.app.cart.service.CartService;
 import main.java.com.ll.exam.ebook.app.member.entity.Member;
 import main.java.com.ll.exam.ebook.app.member.service.MemberService;
 import main.java.com.ll.exam.ebook.app.post.service.PostService;
@@ -41,20 +42,8 @@ public class NotProdInitData {
 
             postService.write(
                     member1,
-                    "자바스크립트를 우아하게 사용하는 방법",
-                    """
-                            # 자바스크립트는 이렇게 쓰세요.
-                                                    
-                            ```js
-                            const a = 10;
-                            console.log(a);
-                            ```
-                            """.stripIndent(),
-                    """
-                            <h1>자바스크립트는 이렇게 쓰세요.</h1><div data-language="js" class="toastui-editor-ww-code-block-highlighting"><pre class="language-js"><code data-language="js" class="language-js"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
-                            <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-                                                    """.stripIndent(),
-                    "#IT #프론트엔드 #리액트"
+                    .stripIndent(),
+                    .stripIndent(),
             );
 
             postService.write(member2, "제목 3", "내용 3", "내용 3", "#IT# 프론트엔드 #HTML #CSS");
