@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f99e1b6-982a-488f-9c37-a2a296515eee" name="Changes" comment="Entity 구현,">
-      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/member/repository/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/controller/MemberControllerTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/resources/templates/layout.html" afterDir="false" />
+    <list default="true" id="2f99e1b6-982a-488f-9c37-a2a296515eee" name="Changes" comment="pr">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/EbookApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/EbookApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/member/service/MemberService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +17,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -64,7 +64,9 @@
       <option name="presentableId" value="Default" />
       <updated>1666139355859</updated>
       <workItem from="1666139359141" duration="8141000" />
-      <workItem from="1666168263420" duration="1154000" />
+      <workItem from="1666168263420" duration="3272000" />
+      <workItem from="1666243920205" duration="1000" />
+      <workItem from="1666244184934" duration="639000" />
     </task>
     <task id="LOCAL-00001" summary="DB연결 및 yml 추가 설정">
       <created>1666164328416</created>
@@ -87,7 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666167679440</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Controllor 및 Service 구현, 회원가입 기능">
+      <created>1666169492807</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666169492807</updated>
+    </task>
+    <task id="LOCAL-00005" summary="pr">
+      <created>1666243615748</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666243615748</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +124,8 @@
     <MESSAGE value="DB연결 및 yml 추가 설정" />
     <MESSAGE value="initData 도입" />
     <MESSAGE value="Entity 구현," />
-    <option name="LAST_COMMIT_MESSAGE" value="Entity 구현," />
+    <MESSAGE value="Controllor 및 Service 구현, 회원가입 기능" />
+    <MESSAGE value="pr" />
+    <option name="LAST_COMMIT_MESSAGE" value="pr" />
   </component>
 </project>
