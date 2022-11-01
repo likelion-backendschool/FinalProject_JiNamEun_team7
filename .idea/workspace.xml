@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f99e1b6-982a-488f-9c37-a2a296515eee" name="Changes" comment="cashLog 기능 도입 및 util 수정">
+    <list default="true" id="2f99e1b6-982a-488f-9c37-a2a296515eee" name="Changes" comment="작가명을 선택적으로 입력하도록 설정">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/com/ll/exam/eBook/app/cart/repository/CartItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/com/ll/exam/eBook/app/cash/entity/CashLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/cart/CartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/cart/entity/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/cart/service/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/cash/entity/CashLog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2Week_Mission/src/main/resources/templates/member/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/2Week_Mission/src/main/resources/templates/member/join.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/initData/NotProdInitData.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/initData/NotProdInitData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/rq/Rq.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/base/rq/Rq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/email/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/email/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/emailVerification/controller/EmailVerificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/emailVerification/controller/EmailVerificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/emailVerification/service/EmailVerificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/1Week_Mission/src/main/java/com/ll/exam/ebook/app/emailVerification/service/EmailVerificationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,21 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/skadm/IdeaProjects/FinalProject_JiNamEun_team7/2Week_Mission/src/main/java/com/ll/exam/ebook/app",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/skadm/IdeaProjects/FinalProject_JiNamEun_team7/2Week_Mission/src/main/java/com/ll/exam/ebook/app&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="test.java.com.ll.exam.final__2022_10_08.controller" />
@@ -85,7 +96,9 @@
       <workItem from="1666168263420" duration="3272000" />
       <workItem from="1666243920205" duration="1000" />
       <workItem from="1666687548031" duration="3048000" />
-      <workItem from="1666770347914" duration="5503000" />
+      <workItem from="1666770347914" duration="5872000" />
+      <workItem from="1667140092670" duration="778000" />
+      <workItem from="1667282121970" duration="1374000" />
     </task>
     <task id="LOCAL-00001" summary="DB연결 및 yml 추가 설정">
       <created>1666164328416</created>
@@ -150,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666775101600</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="작가명을 선택적으로 입력하도록 설정">
+      <created>1666776330611</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666776330611</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +198,7 @@
     <MESSAGE value="2week setting" />
     <MESSAGE value="주문 기능 도입" />
     <MESSAGE value="cashLog 기능 도입 및 util 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="cashLog 기능 도입 및 util 수정" />
+    <MESSAGE value="작가명을 선택적으로 입력하도록 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="작가명을 선택적으로 입력하도록 설정" />
   </component>
 </project>

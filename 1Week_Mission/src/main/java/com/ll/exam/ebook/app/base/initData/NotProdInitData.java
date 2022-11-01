@@ -1,15 +1,22 @@
-package main.java.com.ll.exam.ebook.app.base.initData;
+package com.ll.exam.eBook.app.base.initData;
 
-import com.ll.exam.ebook.app.cart.service.CartService;
-import main.java.com.ll.exam.ebook.app.member.entity.Member;
-import main.java.com.ll.exam.ebook.app.member.service.MemberService;
-import main.java.com.ll.exam.ebook.app.post.service.PostService;
-import main.java.com.ll.exam.ebook.app.product.entity.Product;
-import main.java.com.ll.exam.ebook.app.product.service.ProductService;
+import com.ll.exam.eBook.app.cart.service.CartService;
+import com.ll.exam.eBook.app.member.entity.Member;
+import com.ll.exam.eBook.app.member.service.MemberService;
+import com.ll.exam.eBook.app.order.entity.Order;
+import com.ll.exam.eBook.app.order.repository.OrderRepository;
+import com.ll.exam.eBook.app.order.service.OrderService;
+import com.ll.exam.eBook.app.post.service.PostService;
+import com.ll.exam.eBook.app.product.entity.Product;
+import com.ll.exam.eBook.app.product.service.ProductService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
+
+import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
 
 @Configuration
 @Profile({"dev", "test"})
@@ -20,7 +27,10 @@ public class NotProdInitData {
     CommandLineRunner initData(
             MemberService memberService,
             PostService postService,
-            ProductService productService
+            ProductService productService,
+            CartService cartService,
+            OrderService orderService,
+            OrderRepository orderRepository
     ) {
         return args -> {
             if (initDataDone) {
@@ -42,8 +52,20 @@ public class NotProdInitData {
 
             postService.write(
                     member1,
-                    .stripIndent(),
-                    .stripIndent(),
+                    "자바스크립트를 우아하게 사용하는 방법",
+                    """
+                            # 자바스크립트는 이렇게 쓰세요.
+                                                    
+                            ```js
+                            const a = 10;
+                            console.log(a);
+                            ```
+                            """.stripIndent(),
+                    """
+                            <h1>자바스크립트는 이렇게 쓰세요.</h1><div data-language="js" class="toastui-editor-ww-code-block-highlighting"><pre class="language-js"><code data-language="js" class="language-js"><span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+                            <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
+                                                    """.stripIndent(),
+                    "#IT #프론트엔드 #리액트"
             );
 
             postService.write(member2, "제목 3", "내용 3", "내용 3", "#IT# 프론트엔드 #HTML #CSS");
@@ -58,6 +80,71 @@ public class NotProdInitData {
             Product product3 = productService.create(member1, "상품명3", 50_000, "REACT", "#IT #REACT");
             Product product4 = productService.create(member2, "상품명4", 60_000, "HTML", "#IT #HTML");
 
+            memberService.addCash(member1, 10_000, "충전__무통장입금");
+            memberService.addCash(member1, 20_000, "충전__무통장입금");
+            memberService.addCash(member1, -5_000, "출금__일반");
+            memberService.addCash(member1, 1_000_000, "충전__무통장입금");
+
+            memberService.addCash(member2, 2_000_000, "충전__무통장입금");
+
+            class Helper {
+                public Order order(Member member, List<Product> products) {
+                    for (int i = 0; i < products.size(); i++) {
+                        Product product = products.get(i);
+
+                        cartService.addItem(member, product);
+                    }
+
+                    return orderService.createFromCart(member);
+                }
+            }
+
+            Helper helper = new Helper();
+
+            Order order1 = helper.order(member1, Arrays.asList(
+                            product1,
+                            product2
+                    )
+            );
+
+            int order1PayPrice = order1.calculatePayPrice();
+            orderService.payByRestCashOnly(order1);
+
+            // 강제로 order1의 결제날짜를 1시간 전으로 돌린다.
+            // 환불 테스트를 위해서
+            order1.setPayDate(LocalDateTime.now().minusHours(1));
+            orderRepository.save(order1);
+
+            Order order2 = helper.order(member2, Arrays.asList(
+                            product3,
+                            product4
+                    )
+            );
+
+            orderService.payByRestCashOnly(order2);
+
+            Order order3 = helper.order(member2, Arrays.asList(
+                            product1,
+                            product2
+                    )
+            );
+
+            cartService.addItem(member1, product3);
+            cartService.addItem(member1, product4);
+
+            Order order4 = helper.order(member2, Arrays.asList(
+                            product3,
+                            product4
+                    )
+            );
+
+            orderService.payByRestCashOnly(order4);
+
+            Order order5 = helper.order(member2, Arrays.asList(
+                            product3,
+                            product4
+                    )
+            );
         };
     }
 }

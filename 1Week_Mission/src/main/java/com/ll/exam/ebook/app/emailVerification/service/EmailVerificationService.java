@@ -1,12 +1,15 @@
-package main.java.com.ll.exam.ebook.app.emailVerification.service;
+package com.ll.exam.eBook.app.emailVerification.service;
 
-import com.ll.exam.ebook.app.AppConfig;
-import com.ll.exam.ebook.app.attr.service.AttrService;
-import com.ll.exam.ebook.app.base.dto.RsData;
-import com.ll.exam.ebook.app.email.service.EmailService;
-import com.ll.exam.ebook.app.member.entity.Member;
+import com.ll.exam.eBook.app.AppConfig;
+import com.ll.exam.eBook.app.attr.service.AttrService;
+import com.ll.exam.eBook.app.base.dto.RsData;
+import com.ll.exam.eBook.app.email.service.EmailService;
+import com.ll.exam.eBook.app.member.entity.Member;
 import lombok.RequiredArgsConstructor;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.stereotype.Service;
+import org.springframework.util.concurrent.ListenableFuture;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -17,14 +20,15 @@ public class EmailVerificationService {
     private final EmailService emailService;
     private final AttrService attrService;
 
-    public RsData<Long> send(Member member) {
+    @Async
+    public ListenableFuture<RsData<Long>> send(Member member) {
         String email = member.getEmail();
         String title = "[%s 이메일인증] 안녕하세요 %s님. 링크를 클릭하여 회원가입을 완료해주세요.".formatted(AppConfig.getSiteName(), member.getName());
         String url = genEmailVerificationUrl(member);
 
         RsData<Long> sendEmailRs = emailService.sendEmail(email, title, url);
 
-        return sendEmailRs;
+        return new AsyncResult<>(sendEmailRs);
     }
 
     public String genEmailVerificationUrl(Member member) {

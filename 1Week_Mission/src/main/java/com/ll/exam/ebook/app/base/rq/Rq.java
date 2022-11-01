@@ -13,6 +13,7 @@ import org.springframework.web.context.annotation.RequestScope;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.xml.stream.XMLStreamReader;
 import java.util.Date;
 
 @Component
@@ -44,6 +45,9 @@ public class Rq {
     public String redirectToBackWithMsg(String msg) {
         String url = req.getHeader("Referer");
 
+        if (StringUtils.hasText(url) == false) {
+            url = "/";
+        }
         return redirectWithMsg(url, msg);
     }
 
